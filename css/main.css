@@ -1,0 +1,202 @@
+/*\
+|*| =============================================
+|*|  CSS GENERIC LAYOUT
+|*| =============================================
+\*/
+	.absCenter {
+		position:absolute;
+		top:0px; bottom:0px; left:0px; right:0px;
+		margin:auto;
+	}
+
+	.flexCenter {
+		display:flex;
+		justify-content: center;
+		align-items : center;
+	}
+
+
+	.grid-container { display:grid; }
+
+	.flex-container { display:flex; }
+/*\
+\*/
+
+
+
+
+/*\
+|*| =============================================
+|*|  CSS RESPONSIVE QUERY
+|*| =============================================
+\*/
+	/* MOBILE */
+	@media screen and (min-width:320px) and (max-width:719px) {
+		nav { 
+			font-size:1.0em;
+			letter-spacing:0px;
+		}
+	}
+
+	/* TABLET */
+	@media screen and (min-width:720px) and (max-width:1023px) {
+		nav { 
+			font-size:1.3em;
+			letter-spacing:2px;
+		}
+	}
+
+	/* DESKTOP */
+	@media screen and (min-width:1024px) {
+		nav { 
+			font-size:1.5em; 
+			letter-spacing:5px;
+		}
+	}
+/*\
+\*/
+
+
+
+
+/*\
+|*| =============================================
+|*|  PROJECT main.css
+|*| =============================================
+\*/
+	/*\
+	|*| =============================================
+	|*|  Project Generic CSS
+	|*| =============================================
+	\*/
+		body {
+			font-family:'Quicksand', 'Chilanka', 'Arial';
+		}
+
+		img {
+			width:215px;
+			height:215px;
+		}
+
+		.horizontalCenter {
+			position:relative;
+
+			max-width:1155px;
+			height:100%;
+			margin:auto;
+		}
+
+		div.background, div.tintBkg {
+			position:fixed;
+			width:100%; height:100%;
+			top:0px; left:0px;
+		}
+
+		div.background {
+			z-index:-10;
+
+			background-image: url('../image/Castelia_Gym.png');
+			background-repeat:no-repeat;
+			background-attachment: fixed;
+			background-position: center;
+			background-size:cover;
+		}
+
+		div.tintBkg {
+			z-index:-5;
+			background-color:rgba(40, 40, 40, 0.85);
+		}
+	/*\
+	\*/
+
+
+
+	/*\
+	|*| =============================================
+	|*|  PROJECT LAYOUT CSS
+	|*| =============================================
+	\*/
+		div.grid-layout {
+			width:100%;
+			height:100%;
+
+			padding-top:140px;
+			padding-bottom:120px;
+
+			display:grid;
+			grid-template-rows:auto 100px;
+			grid-row-gap:40px;
+		}
+
+		div.grid-pokedex {
+			display:grid;
+			grid-template-columns: repeat(auto-fit, minmax(215px, 1fr) );
+			grid-gap:20px 20px;
+		}
+
+		div.grid-pokedex > div.box {
+			width:215px;  height:215px;
+			background-color:rgba(255, 255, 255, 0.6);
+			border-radius:10px;
+			box-shadow:0px 0px 5px black;
+		}
+
+		div.grid-btnSection {
+			position:relative;
+		}
+
+		div.grid-btnSection div.loadMore-Btn {
+			width:250px;
+			height:50px;
+			line-height:50px;
+
+			color:white;
+			font-weight:bold;
+			font-size:1.4em;
+
+			background-color:rgba(0, 0, 0, 0.5);
+
+			text-align:center;
+
+			border-radius:10px;
+		}
+
+		div.loadMore-Btn:hover {
+			cursor: pointer;
+		}
+
+		nav {
+			position:fixed;
+			top:0px;
+			z-index:1000;
+
+			width:100%;
+			height:40px;
+			line-height:40px;
+
+			text-align:center;
+
+			background-color:rgba(255, 255, 255, 1.75);
+			box-shadow:0px 0px 5px black,0px 0px 10px black,0px 0px 15px black;
+		}
+
+		footer {
+			position:fixed;
+			bottom:0px;
+
+			width:230px;
+
+			padding:20px;
+			color:white;
+
+			text-align: center;
+		}
+
+		a {
+			text-decoration: none;
+			color:white;
+		}
+	/*\
+	\*/
+/*\
+\*/

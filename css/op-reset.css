@@ -1,0 +1,39 @@
+/*\
+|*| =============================================
+|*|  GLOBAL RESET
+|*| =============================================
+\*/
+	* {
+		margin:0px;
+		padding:0px;
+		border:0px;
+
+		box-sizing: border-box;		/* BORDER & PADDING IS INCLUDED IN THE CALCULATION OF WIDTH AND HEIGHT*/
+
+		-webkit-user-select: none; 	/* Safari */        
+		-moz-user-select: none; 	/* Firefox */
+		-ms-user-select: none; 		/* IE10+/Edge */
+		user-select: none; 			/* Standard */
+
+		scroll-behavior: smooth;
+	}
+
+	body, html, .fullPage {
+		width:100%;
+		height:100%;
+	}
+
+
+/*\
+|*| =============================================
+|*|  DBEUG OPTIONS
+|*| =============================================
+\*/
+	.debug1 { border:2px dotted rgba(55, 55, 55, 0.8); }
+	.debug2 { border:2px dotted #FFCCCC; background-color:#FFCCCC; }
+	.debug3 { border:2px dotted #CCFFCC; background-color:#CCFFCC; }
+	.debug4 { border:2px dotted #CCCCFF; background-color:#CCCCFF; }
+	.debug5 { border:2px dotted #FFFFCC; background-color:#FFFFCC; }
+	.debug6 { border:2px dotted #FFCCFF; background-color:#FFCCFF; }
+	.debug7 { border:2px dotted #CCFFFF; background-color:#CCFFFF; }
+
